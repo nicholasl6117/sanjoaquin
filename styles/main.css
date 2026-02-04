@@ -1,0 +1,48 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+header {
+    display: flex;
+    gap: 20px;
+}
+
+header h2 {
+    font-size: 170%;
+    color: #800000;
+    padding-left: 30px;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    padding-left: 30px;
+}
+
+.shadow {
+    text-shadow: 1px 1px 3px #800000;
+}
+
+main h1 {
+    font-size: 150%;
+}
+
+main h2 {
+    font-size: 130%;
+    color: #800000;
+}
+
+main h3 {
+    font-size: 105%;
+}
+
+a:hover a:focus {
+    font-style: italic;
+}
+
+footer p {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
