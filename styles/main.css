@@ -11,7 +11,7 @@ html {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
-    width: 600px;
+    width: 900px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -47,13 +47,42 @@ header h3 {
 
 main {
     padding: 0 1em;
+    display: flex;
+}
+
+section {
+    width: 70%;
+}
+
+aside {
+    width: 30%;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 3px solid #931420;
+    border-bottom: 3px solid #931420;
+    align-items: center;
+}
+
+article p {
+    width:50%;
+}
+
+article h3 {
+    width: 100%;
+    margin: 0.1em 0;
+}
+
+article img {
+    width: 45%;
+    padding-left: 1em;
 }
 
 main h1 {
     font-size: 150%;
-    padding: .3em 0;
-    border-top: 3px solid #931420;
-    border-bottom: 3px solid #931420;
+    padding: .1em;
 }
 
 main h2 {
@@ -76,7 +105,7 @@ main p {
 }
 
 main blockquote {
-    padding: 0 2em;
+    padding: 0 2em 1em 2em;
     font-style: italic;
 }
 
