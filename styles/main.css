@@ -6,12 +6,14 @@
 
 html {
     background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
-    width: 900px;
+    width: 100%;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -23,6 +25,7 @@ header {
     border-bottom: 3px solid #931420;
     padding: 1.5em 0 2em 0;
     background-image: linear-gradient(#f6bb73, white);
+    align-items: center;
 }
 
 header img {
@@ -103,7 +106,9 @@ article h3 {
 }
 
 article img {
+    max-width: 100%;
     width: 45%;
+    min-width: 75px;
     padding-left: 1em;
 }
 
@@ -158,4 +163,67 @@ footer p {
     justify-content: center;
     color: white;
     padding: 1em 0;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 90%;
+    }
+
+    body {
+        box-shadow: none;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    header h2 {
+        font-size: 200%;
+    }
+    
+    main {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    #mobilemenu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: #800000 !important;
+    }
+
+    section, aside {
+        width: 95%;
+    }
+
+    aside {
+        order: 3;
+    }
+}
+
+
+@media only screen and (max-width: 479px) {
+    header h2 {
+        font-size: 150%;
+    }
+
+    header h3 {
+        font: 100%;
+    }
+
+    section p {
+        font-size: 75%;
+    }
 }
